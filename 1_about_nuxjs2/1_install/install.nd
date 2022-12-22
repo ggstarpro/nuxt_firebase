@@ -1,0 +1,88 @@
+インストールの方法は２種類(要Node.js)
+■1
+nuxtのみインストール
+npm init -y
+npm install nuxt@2.15.7
+■2
+ライブラリを選びまとめてインストール
+npx create-nuxt-app <project-name>  // 最新バージョン
+
+
+$npx create-nuxt-app nuxt-sample
+  Need to install the following packages:
+    create-nuxt-app
+  Ok to proceed? (y)
+$y
+  ✨  Generating Nuxt.js project in nuxt-sample
+  ? Project name: (nuxt-sample)
+$Enter
+
+? Programming language: (Use arrow keys)
+❯ JavaScript
+  TypeScript
+
+? Package manager: (Use arrow keys)
+  Yarn
+> Npm
+
+? UI framework: (Use arrow keys)
+❯ None
+
+? Template engine:
+HTML
+
+? Nuxt.js modules:
+❯◉ Axios - Promise based HTTP client
+
+? Linting tools:
+ ◉ ESLint
+❯◉ Prettier
+
+? Testing framework:
+  None
+❯ Jest
+
+
+? Rendering mode:
+  Universal (SSR / SSG)
+❯ Single Page App
+
+? Deployment target: (Use arrow keys)
+❯ Server (Node.js hosting)
+
+? Development tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+❯◯ jsconfig.json (Recommended for VS Code if you're not using typescript)
+ ◯ Semantic Pull Requests
+
+ ? Continuous integration: (Use arrow keys)
+❯ None
+
+? Version control system: (Use arrow keys)
+❯ Git
+
+```
+  To get started:
+        // 開発用
+        cd nuxt-sample
+        npm run dev
+
+  To build & start for production:
+        // 本番用
+        cd nuxt-sample
+        npm run build  // webpackでJSとCSSを圧縮(distフォルダ生成)
+        npm run start  // Nuxtサーバ起動
+
+  To test:
+
+        cd nuxt-sample
+        npm run test
+```
+
+$ rpm run dev
+Nuxtの機能でホットリロード対応
+
+■バージョンを合わせる
+package-lock.jsonファイルを削除
+node_modulesフォルダを削除
+package.json ファイルを修正 (https://github.com/aokitashipro/udemy_nuxt_test/blob/main/section2/package.json)
+npm install を実行

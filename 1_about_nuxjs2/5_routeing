@@ -1,0 +1,8 @@
+■ルーティングVuejsの場合
+Vue.jsでルーティングする場合(VueCLIでインストール)
+1.表示したいコンポーネントを作成
+2.routes/index.jsに1をimport
+3.routes/index.jsにパスの情報を追記
+4.リンクを貼る<router-link to ="">
+5.描画<router-view>
+
