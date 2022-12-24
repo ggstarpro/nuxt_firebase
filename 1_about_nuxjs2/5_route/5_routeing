@@ -1,0 +1,25 @@
+■ルーティングVuejsの場合
+Vue.jsでルーティングする場合(VueCLIでインストール)
+1.表示したいコンポーネントを作成
+2.routes/index.jsに1をimport
+3.routes/index.jsにパスの情報を追記
+4.リンクを貼る<router-link to ="">
+5.描画<router-view>
+
+■ルーティングnuxtの場合
+nuxtのルールに合わせて作成すると、自動でルーティングが設定される
+1.pagesフォルダ内にコンポーネントを作成
+2.ルーティング情報を自動で追記
+3.リンクを貼る<NuxtLink to="">
+4.描画 <Nuxt />
+
+■nuxt router.jsについて
+自動生成された内容は、
+.nuxt/router.jsで確認可能
+※ビルド時にコンパイルがかかるので
+.nux/router.jsは修正しない
+
+nuxt.config.js内に追記で上書き可能
+router{
+  extendRoutes(){}
+}
