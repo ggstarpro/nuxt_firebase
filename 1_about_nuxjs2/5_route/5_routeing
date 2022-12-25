@@ -23,3 +23,9 @@ nuxt.config.js内に追記で上書き可能
 router{
   extendRoutes(){}
 }
+
+■ルーティングを作ってみる
+products/index.vue
+products/create.vue
+products/_id/show.vue
+products/_id/edit.vue
